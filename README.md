@@ -1,1 +1,1 @@
-# iocage-plugin-sabnzbd
+Blueprint for sabnzbd news reader.
