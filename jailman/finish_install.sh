@@ -1,6 +1,6 @@
 #!/usr/local/bin/bash
 
-initblueprint "$1"
+initplugin "$1"
 
 # Check if (in)complete download datasets exist, create if they do not.
 createmount "$1" "${global_dataset_downloads}" /mnt/downloads
@@ -21,4 +21,4 @@ iocage exec "$1" sed -i '' -e 's?complete_dir = Downloads/complete?complete_dir 
 
 iocage exec "$1" service sabnzbd start
 
-exitblueprint "$1"
+exitplugin "$1"
