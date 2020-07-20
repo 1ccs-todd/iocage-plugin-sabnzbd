@@ -1,1 +1,1 @@
-Blueprint for sabnzbd news reader.
+plugin for sabnzbd news reader.
