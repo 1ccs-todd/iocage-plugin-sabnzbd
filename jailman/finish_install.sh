@@ -6,6 +6,7 @@ initplugin "$1"
 createmount "$1" "${global_dataset_downloads}" /mnt/downloads
 createmount "$1" "${global_dataset_downloads}"/complete /mnt/downloads/complete
 createmount "$1" "${global_dataset_downloads}"/incomplete /mnt/downloads/incomplete
+chown -R _sabnzbd:_sabnzbd /config
 
 # start once to let service write default config
 iocage exec "$1" service sabnzbd start
